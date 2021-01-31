@@ -5,7 +5,10 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --project tsconfig.build.json"
+    "build": "tsc --project tsconfig.build.json",
+    "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix",
+    "lint-ci": "eslint 'src/**/*.{js,ts}'",
+    "format": "prettier --write 'src/**/*.{js,ts}'"
   },
   "keywords": [],
   "author": "",
