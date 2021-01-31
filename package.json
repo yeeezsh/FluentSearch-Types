@@ -2,10 +2,10 @@
   "name": "fluentsearch-types",
   "version": "0.0.1",
   "description": "",
-  "main": "index.ts",
+  "main": "src/index.d.ts",
+  "types": "src/index.d.ts",
+  "repository": "git@github.com:yee2542/FluentSearch-Types.git",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --project tsconfig.build.json",
     "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix",
     "lint-ci": "eslint 'src/**/*.{js,ts}'",
     "format": "prettier --write 'src/**/*.{js,ts}'"
