@@ -26,9 +26,6 @@
     "ts-node": "^9.1.1",
     "typescript": "^4.1.2"
   },
-  "bin": {
-    "fluentsearch-types": "dist/app.js"
-  },
   "files": [
     "dist/**/*"
   ],
