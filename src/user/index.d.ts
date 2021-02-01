@@ -7,7 +7,7 @@ export type User = {
   mainEmail: string;
   email: string[];
   password: string;
-  oauth: UserToken[] | [];
+  oauth: OAuthToken[] | [];
   name: string;
   // logic
   role: UserRoleEnum;
@@ -21,7 +21,7 @@ export type User = {
   updateDate: Date;
 };
 
-export type UserToken = {
+export type OAuthToken = {
   provider: OAuthProviderEnum;
   token: string;
 };
