@@ -3,7 +3,7 @@ import { UserRoleEnum } from './enums/user-role.enum';
 import { UserZoneEnum } from './enums/user-zone';
 import { UserToken } from './user-token';
 
-export interface User {
+export type User = {
   mainEmail: string;
   email: string[];
   password: string;
@@ -19,4 +19,4 @@ export interface User {
 
   createDate: Date;
   updateDate: Date;
-}
+};
