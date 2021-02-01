@@ -25,3 +25,12 @@ export type UserToken = {
   provider: OAuthProviderEnum;
   token: string;
 };
+
+export type UserSession = {
+  id: string;
+  mainEmail: string;
+  name: string;
+  role: UserRoleEnum;
+  package: UserPackageEnum;
+  zone: UserZoneEnum;
+};
