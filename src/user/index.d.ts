@@ -1,7 +1,7 @@
+import { OAuthProviderEnum } from './enums/oauth-provider.enum';
 import { UserPackageEnum } from './enums/user-packages.enum';
 import { UserRoleEnum } from './enums/user-role.enum';
 import { UserZoneEnum } from './enums/user-zone';
-import { UserToken } from './user-token';
 
 export type User = {
   mainEmail: string;
@@ -19,4 +19,9 @@ export type User = {
 
   createDate: Date;
   updateDate: Date;
+};
+
+export type UserToken = {
+  provider: OAuthProviderEnum;
+  token: string;
 };
