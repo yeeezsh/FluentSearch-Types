@@ -1,4 +1,4 @@
-export enum TaskState {
+export enum TaskStateEnum {
   wait = 'wait',
   excute = 'excute',
   error = 'error',
