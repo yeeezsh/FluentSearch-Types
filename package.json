@@ -1,6 +1,6 @@
 {
   "name": "fluentsearch-types",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "",
   "main": "types/index.ts",
   "repository": "git@github.com:yee2542/FluentSearch-Types.git",
