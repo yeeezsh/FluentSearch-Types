@@ -2,6 +2,7 @@
   "name": "fluentsearch-types",
   "version": "0.0.12",
   "description": "",
+  "main": "types/index.ts",
   "repository": "git@github.com:yee2542/FluentSearch-Types.git",
   "scripts": {
     "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix",
