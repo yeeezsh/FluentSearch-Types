@@ -1,5 +1,5 @@
-import { ZoneEnum } from 'types/common/zone.enum';
-import { User } from 'types/user';
+import { User } from '..';
+import { ZoneEnum } from '../common/zone.enum';
 import { FileExtensionEnum } from './enums/file-extenstion.enum';
 import { FileTypeEnum } from './enums/file-type.enum';
 

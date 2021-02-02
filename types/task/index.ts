@@ -1,5 +1,4 @@
-import { ImageFile, ImageThumbnailFile } from 'types/file';
-import { User } from 'types/user';
+import { User, ImageFile, ImageThumbnailFile } from '..';
 import { TaskStateEnum } from './enums/task-state.enum';
 
 type BaseType = {
