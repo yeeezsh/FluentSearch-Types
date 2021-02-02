@@ -4,6 +4,7 @@ import { UserRoleEnum } from './enums/user-role.enum';
 import { UserZoneEnum } from './enums/user-zone';
 
 export type User = {
+  _id: string;
   mainEmail: string;
   email: string[];
   password: string;
@@ -27,7 +28,7 @@ export type OAuthToken = {
 };
 
 export type UserSession = {
-  id: string;
+  _id: string;
   mainEmail: string;
   name: string;
   role: UserRoleEnum;
