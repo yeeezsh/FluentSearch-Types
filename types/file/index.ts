@@ -20,7 +20,7 @@ export type BaseFile<T extends FileTypeEnum, P, M> =
 export type BaseFileMeta<P> =
   | {
       size: number; // bytes
-      originalFilename: string;
+      filename: string;
       md5: string;
       extension: FileExtensionEnum;
       contentType: string;
