@@ -4,3 +4,4 @@ export type App = {
 
 export * from './user';
 export * from './file';
+export * from './task';
