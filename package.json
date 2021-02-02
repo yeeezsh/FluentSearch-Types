@@ -2,12 +2,13 @@
   "name": "fluentsearch-types",
   "version": "0.0.18",
   "description": "",
-  "main": "types/index.ts",
+  "main": "dist/index.js",
   "repository": "git@github.com:yee2542/FluentSearch-Types.git",
   "scripts": {
     "lint": "eslint 'src/**/*.{js,ts}' --quiet --fix",
     "lint-ci": "eslint 'src/**/*.{js,ts}'",
-    "format": "prettier --write 'src/**/*.{js,ts}'"
+    "format": "prettier --write 'src/**/*.{js,ts}'",
+    "build": "tsc --project tsconfig.build.json"
   },
   "keywords": [],
   "author": "",
@@ -26,7 +27,7 @@
     "typescript": "^4.1.2"
   },
   "files": [
-    "types/**/*"
+    "dist/**/*"
   ],
   "engines": {
     "node": ">=14.0.0"
