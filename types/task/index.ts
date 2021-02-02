@@ -19,6 +19,7 @@ export type Task = BaseType & {
 };
 
 export type TaskGroup = BaseType & {
+  current: Task['_id'][];
   order: number;
   processing: number;
   wait: number;
