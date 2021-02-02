@@ -21,9 +21,9 @@ export type BaseFileMeta<P> =
   | {
       size: number; // bytes
       filename: string;
-      md5: string;
       extension: FileExtensionEnum;
       contentType: string;
+      sha1?: string;
     }
   | P;
 
