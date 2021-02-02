@@ -28,3 +28,4 @@ export type BaseFileMeta<P> =
   | P;
 
 export * from './photo';
+export * from './photo-thumbnail';
