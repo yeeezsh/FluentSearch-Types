@@ -24,3 +24,5 @@ export type TaskGroup = BaseType & {
   wait: number;
   total: number;
 };
+
+export * from './enums';
