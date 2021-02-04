@@ -1,4 +1,4 @@
-import { MllibEnum } from '../enums';
+import { MllibEnum } from '../../enums';
 
 export type DeepDetectInitApi = {
   description: string;
