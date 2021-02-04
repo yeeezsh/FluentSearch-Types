@@ -1,4 +1,4 @@
-import { User, ImageFile, ImageThumbnailFile } from '..';
+import { User, ImageFileSchema, ImageThumbnailFileSchema } from '..';
 import { TaskStateEnum } from './enums/task-state.enum';
 
 type BaseType = {
@@ -14,7 +14,7 @@ type BaseType = {
 export type Task = BaseType & {
   group?: string;
   order: number;
-  file?: ImageFile['_id'] | ImageThumbnailFile['_id'];
+  file?: ImageFileSchema['_id'] | ImageThumbnailFileSchema['_id'];
 };
 
 export type TaskGroup = BaseType & {
