@@ -1,11 +1,11 @@
 import { UserRoleEnum, UserPackageEnum, UserZoneEnum, OAuthProviderEnum } from '..';
 
-export type User = {
+export type UserSchema = {
   _id: string;
   mainEmail: string;
   email: string[];
   password: string;
-  oauth: OAuthToken[] | [];
+  oauth: OAuthTokenSchema[] | [];
   name: string;
   // logic
   role: UserRoleEnum;
@@ -19,16 +19,7 @@ export type User = {
   updateDate: Date;
 };
 
-export type OAuthToken = {
+export type OAuthTokenSchema = {
   provider: OAuthProviderEnum;
   token: string;
-};
-
-export type UserSession = {
-  _id: string;
-  mainEmail: string;
-  name: string;
-  role: UserRoleEnum;
-  package: UserPackageEnum;
-  zone: UserZoneEnum;
 };

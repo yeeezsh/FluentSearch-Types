@@ -1,10 +1,10 @@
 import { TaskStateEnum } from '..';
-import { User } from '../..';
+import { UserSchema } from '../..';
 
 export type BaseTypeSchema = {
   _id: string;
   label: string;
-  owner: User['_id'];
+  owner: UserSchema['_id'];
   state: TaskStateEnum;
 
   createAt: Date;

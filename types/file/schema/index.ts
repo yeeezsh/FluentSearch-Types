@@ -1,10 +1,10 @@
 import { FileTypeEnum, FileExtensionEnum } from '..';
-import { User, ZoneEnum } from '../..';
+import { UserSchema, ZoneEnum } from '../..';
 
 export type BaseFileSchema<T extends FileTypeEnum, M> = {
   _id: string;
   meta: BaseFileMetaSchema<M>;
-  owner: User['_id'];
+  owner: UserSchema['_id'];
   zone: ZoneEnum;
   label: string;
   type: T;
