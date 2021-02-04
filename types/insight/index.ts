@@ -6,4 +6,4 @@ export type InsightSchema = {
 };
 
 export * from './enums';
-export * from './deepdetect-response';
+export * from './deepdetect-api/';
