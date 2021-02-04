@@ -1,14 +1,14 @@
-import { Class, ModelEnum } from '..';
+import { ClassResponseApi, ModelEnum } from '..';
 import { LanguageEnum } from '../../common/lang.enum';
-import { BBox } from '../deepdetect-api';
+import { BBoxResponseApi } from '../dto/deepdetect-api';
 
 export type InsightSchema = {
   _id: string;
   label: string;
-  result: Class['cat'];
+  result: ClassResponseApi['cat'];
   model: ModelEnum;
-  bbox?: BBox;
-  prob: Class['prob'];
+  bbox?: BBoxResponseApi;
+  prob: ClassResponseApi['prob'];
   lang: LanguageEnum;
 
   createAt: Date;
