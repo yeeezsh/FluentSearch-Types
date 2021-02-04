@@ -4,7 +4,6 @@ import { BBoxResponseApi } from '../dto/deepdetect-api';
 
 export type InsightSchema = {
   _id: string;
-  label: string;
   result: ClassResponseApi['cat'];
   model: ModelEnum;
   bbox?: BBoxResponseApi;
