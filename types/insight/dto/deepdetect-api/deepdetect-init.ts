@@ -1,6 +1,6 @@
 import { MllibEnum } from '../../enums';
 
-export type DeepDetectInitApi = {
+export type DeepDetectInitAPI = {
   description: string;
   model: {
     repository: string;
