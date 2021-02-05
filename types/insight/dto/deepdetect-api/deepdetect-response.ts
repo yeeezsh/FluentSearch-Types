@@ -1,22 +1,22 @@
-export type BBoxResponseApi = {
+export type BBoxResponseAPI = {
   xmax: number;
   ymax: number;
   ymin: number;
   xmin: number;
 };
 
-export type ClassResponseApi = {
+export type ClassResponseAPI = {
   prob: number;
-  bbox?: BBoxResponseApi;
+  bbox?: BBoxResponseAPI;
   cat: string;
 };
 
 export type PredictionResponseApi = {
-  classes: ClassResponseApi[];
+  classes: ClassResponseAPI[];
   uri: string;
 };
 
-export type DeepDetectResponseApi = {
+export type DeepDetectResponseAPI = {
   status: {
     code: number;
     msg: string;
