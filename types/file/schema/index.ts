@@ -23,3 +23,4 @@ export type BaseFileMetaSchema<P> = {
 
 export * from './image';
 export * from './image-thumbnail';
+export * from './video';
