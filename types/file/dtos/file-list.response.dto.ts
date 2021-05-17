@@ -1,6 +1,6 @@
 import { FileTypeEnum, UserSchema, ZoneEnum } from '../..';
 
-export type FileListResponse = {
+export type FileListResponseDTO = {
   _id: string;
   owner: UserSchema['_id'];
   zone: ZoneEnum;
