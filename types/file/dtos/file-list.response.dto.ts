@@ -6,7 +6,7 @@ export type FileListResponseDTO = {
   zone: ZoneEnum;
   label: string;
   type: FileTypeEnum;
-  refs: string[]; // for indexing image/video thumbnail
+  refs?: string; // for indexing image/video thumbnail
 
   uri: string;
   thumbnail_uri: string;
