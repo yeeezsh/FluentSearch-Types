@@ -15,8 +15,8 @@ export type UserSchema = {
   zone: UserZoneEnum;
   deactivate?: boolean;
 
-  createDate: Date;
-  updateDate: Date;
+  createAt: Date;
+  updateAt: Date;
 };
 
 export type OAuthTokenSchema = {
