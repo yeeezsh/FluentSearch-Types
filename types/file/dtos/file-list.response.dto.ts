@@ -4,7 +4,6 @@ export type FileListResponseDTO = {
   _id: string;
   owner: UserSchema['_id'];
   zone: ZoneEnum;
-  label: string;
   type: FileTypeEnum;
   original_filename: string;
   refs?: string; // for indexing image/video thumbnail
