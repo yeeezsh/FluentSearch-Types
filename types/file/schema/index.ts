@@ -1,4 +1,4 @@
-import { FileTypeEnum, FileExtensionEnum } from '..';
+import { FileTypeEnum } from '..';
 import { UserSchema, ZoneEnum } from '../..';
 
 export type BaseFileSchema<T extends FileTypeEnum, M> = {
@@ -15,7 +15,7 @@ export type BaseFileSchema<T extends FileTypeEnum, M> = {
 
 export type BaseFileMetaSchema<P> = {
   size: number; // bytes
-  extension: FileExtensionEnum;
+  extension: string;
   contentType: string;
   sha1?: string;
 } & P;
