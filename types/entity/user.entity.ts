@@ -41,8 +41,8 @@ const userSchema = new Schema<UserDocument>({
     required: false,
     default: undefined,
   },
-  createDate: { type: Date, default: Date.now, required: true },
-  updateDate: { type: Date, default: Date.now, required: true },
+  createAt: { type: Date, default: Date.now, required: true },
+  updateAt: { type: Date, default: Date.now, required: true },
 });
 
 export type UserDocument = Document & UserSchema;
