@@ -5,6 +5,13 @@ export type VideoMeta = {
   codec: string;
   bitrate: number;
 
+  duration: {
+    original: string;
+    hour: number;
+    minute: number;
+    second: number;
+  };
+
   audio: {
     channel: number;
     bitrate: number;

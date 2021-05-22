@@ -6,7 +6,7 @@ export type BaseFileSchema<T extends FileTypeEnum, M> = {
   meta: BaseFileMetaSchema<M>;
   owner: UserSchema['_id'];
   zone: ZoneEnum;
-  label: string;
+  original_filename: string;
   type: T;
 
   createAt: Date;
@@ -15,7 +15,6 @@ export type BaseFileSchema<T extends FileTypeEnum, M> = {
 
 export type BaseFileMetaSchema<P> = {
   size: number; // bytes
-  filename: string;
   extension: FileExtensionEnum;
   contentType: string;
   sha1?: string;
