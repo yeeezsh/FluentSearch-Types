@@ -48,3 +48,5 @@ const userSchema = new Schema<UserDocument>({
 export type UserDocument = Document & UserSchema;
 
 export default userSchema;
+
+export const USERS_SCHEMA_NAME = 'users';
