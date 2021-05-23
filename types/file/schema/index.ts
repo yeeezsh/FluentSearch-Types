@@ -8,6 +8,7 @@ export type BaseFileSchema<T extends FileTypeEnum, M> = {
   zone: ZoneEnum;
   original_filename: string;
   type: T;
+  refs?: string;
 
   createAt: Date;
   updateAt: Date;

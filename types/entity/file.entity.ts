@@ -15,6 +15,7 @@ const fileSchema = new Schema<FileDocument>({
   zone: { type: String, index: true },
   original_filename: { type: String },
   type: { type: FileTypeEnum, index: true, enum: FileTypeEnum },
+  refs: { type: String, index: true },
 
   createAt: { type: Date, default: Date.now, index: true },
   updateAt: { type: Date, default: Date.now, index: true },
