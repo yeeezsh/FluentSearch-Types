@@ -25,12 +25,12 @@ export default fileSchema;
 export type FileDocument = Document &
   BaseFileSchema<
     FileTypeEnum.Image | FileTypeEnum.ImageThumbnail | FileTypeEnum.Video,
-    Record<'record', any>
+    Record<string, any>
   >;
 
 export type File = BaseFileSchema<
   FileTypeEnum.Image | FileTypeEnum.ImageThumbnail | FileTypeEnum.Video,
-  Record<'record', any>
+  Record<string, any>
 >;
 
 export const FILES_SCHEMA_NAME = 'files';
