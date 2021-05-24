@@ -6,7 +6,6 @@ import { TaskTypeEnum } from '../enums';
 export type TaskSchema = BaseTypeSchema & {
   type: TaskTypeEnum;
   group?: string;
-  order: number;
   file?:
     | ImageFileSchema['_id']
     | ImageThumbnailFileSchema['_id']
