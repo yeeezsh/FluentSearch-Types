@@ -1,5 +1,5 @@
-import { Document, Model, Schema, Types } from 'mongoose';
-import { FileTypeEnum, BaseFileSchema } from '..';
+import { Document, Schema } from 'mongoose';
+import { BaseFileSchema, FileTypeEnum } from '..';
 
 const metaSchema = new Schema({
   width: { type: Number },
