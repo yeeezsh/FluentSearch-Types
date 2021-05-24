@@ -7,6 +7,7 @@ const taskSchema = new Schema<TaskSchema>({
   state: { type: TaskStateEnum, index: true },
   error: { type: String },
 
+  priority: { type: Number, index: true, default: 0 },
   type: { type: TaskTypeEnum, index: true },
   group: { type: String, index: true },
   uri: { type: String },

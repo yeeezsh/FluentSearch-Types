@@ -6,6 +6,7 @@ export type BaseTypeSchema = {
   label: string;
   owner: UserSchema['_id'];
   state: TaskStateEnum;
+  priority: number;
 
   error?: string;
 
