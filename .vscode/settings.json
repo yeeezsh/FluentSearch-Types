@@ -1,5 +1,9 @@
 {
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "typescript.preferences.importModuleSpecifier": "relative"
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "files.exclude": {
+    "dist": true,
+    "node_modules": true
+  }
 }
