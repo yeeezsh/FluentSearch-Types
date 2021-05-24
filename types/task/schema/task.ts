@@ -6,4 +6,5 @@ export type TaskSchema = BaseTypeSchema & {
   type: TaskTypeEnum;
   group?: string;
   uri?: string;
+  fileId?: File['_id'];
 };

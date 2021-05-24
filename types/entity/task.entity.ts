@@ -11,6 +11,7 @@ const taskSchema = new Schema<TaskSchema>({
   type: { type: TaskTypeEnum, index: true },
   group: { type: String, index: true },
   uri: { type: String },
+  fileId: { type: String, index: true },
 
   createAt: { type: Date, default: Date.now, required: true },
   updateAt: { type: Date, default: Date.now, required: true },
