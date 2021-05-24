@@ -7,6 +7,8 @@ export type BaseTypeSchema = {
   owner: UserSchema['_id'];
   state: TaskStateEnum;
 
+  error?: string;
+
   createAt: Date;
   updateAt: Date;
 };
