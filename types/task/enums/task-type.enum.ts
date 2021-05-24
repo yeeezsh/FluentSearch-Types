@@ -1,5 +1,6 @@
 export enum TaskTypeEnum {
-  ImageThumbnail = 'image-thumbnail',
-  ImageInsight = 'image-insight',
-  VideoInsight = 'video-insight',
+  storage = 'storage',
+  insight = 'insight',
+  video_insight = 'video_insight',
+  spotlight = 'spotlight',
 }
