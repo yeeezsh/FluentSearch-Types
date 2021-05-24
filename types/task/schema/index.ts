@@ -1,4 +1,4 @@
-import { TaskStateEnum } from '..';
+import { TaskStateEnum, TaskTypeEnum } from '..';
 import { UserSchema } from '../..';
 
 export type BaseTypeSchema = {
@@ -6,6 +6,8 @@ export type BaseTypeSchema = {
   label: string;
   owner: UserSchema['_id'];
   state: TaskStateEnum;
+  type: TaskTypeEnum;
+
   priority: number;
 
   error?: string;
