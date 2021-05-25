@@ -1,6 +1,6 @@
 import { UserSchema } from '../..';
 
-export type Quota = {
+export type QuotaSchema = {
   owner: UserSchema['_id'];
   available: number;
 };
