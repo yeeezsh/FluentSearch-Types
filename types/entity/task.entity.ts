@@ -21,4 +21,4 @@ export default taskSchema;
 
 export type TaskDocument = Document & TaskSchema;
 
-export const TASK_SCHEMA_NAME = 'tasks';
+export const TASKS_SCHEMA_NAME = 'tasks';
