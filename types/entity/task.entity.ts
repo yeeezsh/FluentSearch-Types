@@ -20,3 +20,5 @@ const taskSchema = new Schema<TaskSchema>({
 export default taskSchema;
 
 export type TaskDocument = Document & TaskSchema;
+
+export const TASK_SCHEMA_NAME = 'tasks';
