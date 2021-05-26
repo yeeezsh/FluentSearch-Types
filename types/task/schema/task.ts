@@ -5,4 +5,5 @@ export type TaskSchema = BaseTypeSchema & {
   group?: string;
   uri?: string;
   fileId?: File['_id'];
+  fileType?: File['type'];
 };
