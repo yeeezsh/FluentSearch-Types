@@ -1,4 +1,5 @@
 import { Document, Schema } from 'mongoose';
+import { FileTypeEnum } from '../file';
 import { TaskSchema, TaskStateEnum, TaskTypeEnum } from '../task';
 
 const taskSchema = new Schema<TaskSchema>({
@@ -12,6 +13,7 @@ const taskSchema = new Schema<TaskSchema>({
   group: { type: String, index: true },
   uri: { type: String },
   fileId: { type: String, index: true },
+  fileType: { type: FileTypeEnum },
 
   createAt: { type: Date, default: Date.now, required: true },
   updateAt: { type: Date, default: Date.now, required: true },
