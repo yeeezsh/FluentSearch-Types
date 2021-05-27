@@ -10,6 +10,7 @@ const insightSchema = new Schema<InsightSchema>({
     cat: { type: String, index: true },
   },
   keyword: { type: String, index: true },
+  owner: { type: String, index: true },
 
   model: { type: ModelEnum, index: true },
   bbox: { type: Object },
