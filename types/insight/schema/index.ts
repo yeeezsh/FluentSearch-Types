@@ -6,7 +6,6 @@ import { BBoxResponseAPI } from '../dto/deepdetect-api';
 
 export type InsightSchema = {
   _id: string;
-  owner: string;
 
   result: ClassResponseAPI['cat'];
   keyword: string;
