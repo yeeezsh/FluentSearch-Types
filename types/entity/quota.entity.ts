@@ -2,7 +2,7 @@ import { Document, Schema } from 'mongoose';
 import { QuotaSchema } from '../quota';
 
 const quotaSchema = new Schema<QuotaDocument>({
-  owner: { type: String, index: true },
+  owner: { type: String },
   available: { type: Number },
 });
 
