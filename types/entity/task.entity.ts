@@ -4,15 +4,15 @@ import { TaskSchema, TaskStateEnum, TaskTypeEnum } from '../task';
 
 const taskSchema = new Schema<TaskSchema>({
   label: { type: String },
-  owner: { type: String, index: true },
-  state: { type: TaskStateEnum, index: true },
+  owner: { type: String },
+  state: { type: TaskStateEnum },
   error: { type: String },
 
-  priority: { type: Number, index: true, default: 0 },
-  type: { type: TaskTypeEnum, index: true },
-  group: { type: String, index: true },
+  priority: { type: Number, default: 0 },
+  type: { type: TaskTypeEnum },
+  group: { type: String },
   uri: { type: String },
-  fileId: { type: String, index: true },
+  fileId: { type: String },
   fileType: { type: FileTypeEnum },
 
   createAt: { type: Date, default: Date.now, required: true },
