@@ -15,6 +15,10 @@ export type InsightSchema = {
   bbox?: BBoxResponseAPI;
   prob: ClassResponseAPI['prob'];
   lang: LanguageEnum;
+  extractSize?: {
+    width: number;
+    height: number;
+  };
 
   fileId: File['_id'];
   fileType: FileTypeEnum;
