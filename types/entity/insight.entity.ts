@@ -16,6 +16,10 @@ const insightSchema = new Schema<InsightSchema>({
   bbox: { type: Object },
   prob: { type: Number },
   lang: { type: LanguageEnum },
+  extractSize: {
+    width: { type: Number },
+    height: { type: Number },
+  },
 
   fileId: { type: String, index: true },
   fileType: { type: FileTypeEnum, index: true },
